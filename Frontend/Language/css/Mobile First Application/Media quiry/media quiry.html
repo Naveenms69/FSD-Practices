@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Media Quiry</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .item{
+                background-color: pink;
+                color: black;
+                font-size: 80px;
+                display: none;
+
+            }
+            @media (max-width: 300px){
+                #item-1{
+                    background-color: yellow;
+                    display: block;}
+                }
+            @media (min-width: 301px) and (max-width: 400px){
+                #item-2{
+                    background-color: red;
+                    display: block;}
+                }
+            @media (min-width: 401px) and (max-width: 500px){
+                #item-3{
+                    background-color: blue;
+                    display: block;}
+                }
+            @media (min-width: 501px) and (max-width: 600px){
+                #item-4{
+                    background-color: green;
+                    display: block;}
+                }
+            @media (min-width: 601px){
+                #item-5{
+                    background-color: orange;
+                    display: block;}
+                }
+            }
+        </style>
+        <div id="parent">
+            <div class="item" id="item-1">Mobile up to 300px</div>
+            <div class="item" id="item-2">Tabs from 301px to 400px</div>
+            <div class="item" id="item-3">Laptops 401px to 500px </div>
+            <div class="item" id="item-4">crt 501px to 600px</div>
+            <div class="item" id="item-5">led 601px to as big much</div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
